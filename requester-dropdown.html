@@ -1,0 +1,32 @@
+<html ng-app="dropdown">
+
+  <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="dropdown.js"></script>
+  </head><!DOCTYPE html>
+
+
+  <body>
+    <div >
+    <form>
+      <div id="responseTimePay" ng-controller="dropdownController as dropdown">
+      <h4>
+        How quickly will you be able to respond to your worker?
+      </h4>
+      <select>
+      <option>
+      {{option.timeframe}}
+      </option>
+      </select>
+          I can add: {{ 1+2 }}.
+      </div>
+    </form>
+
+    </div>
+  </body>
+
+</html>
+
+//ng-repeat = "option in dropdown.options"
+//ng-show="option.isSet(5)"
